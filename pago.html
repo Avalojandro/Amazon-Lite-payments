@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Amazon Lite - Pago</title>
+</head>
+<link rel="stylesheet" href="css/bulma.css">
+<link rel="stylesheet" href="css/pago.css">
+<body>
+<div class="column"><span style="color: transparent">alejandro daniel avalos santamaria </span></div>
+<div class="columns is-vcentered">
+    <div class="column is-3 logo"><center><img src="images/pagos/amazoncom.svg"></center></div>
+    <div class="column is-7 linea">
+        <table class="table tabla">
+            <tr><td colspan="4"><img class="colorline zzz" src="images/pagos/colorline.png" ><img class="car" src="images/pagos/car.svg"><img class="line zzz" src="images/pagos/Line.png"></td></tr>
+            <tr><td><a href="login.html" style="color: #E2A301;">INICIAR SESIÓN</a></td><td><a style="color: #FA7800;">ENVÍO Y PAGO</a></td><td><span>OPCIÓN DE REGALO</span></td><td><span>FINALIZAR PEDIDO</span></td></tr>
+        </table>
+    </div>
+</div>
+<br>
+<div class="pad1">
+<a class="button inf"><img class="in" src="images/pagos/info.png">&nbsp;&nbsp;<span>Especifica a continuación cómo te gusta realizar el pago y lo guardaremos como opción.</span></a>
+</div>
+<br><br>
+<div class="column pad1"><span class="foco">Selecciona un método de pago</span><br><hr></div>
+<div class="columns padd is-vcentered">
+<div class="column is-6" style="padding-top: 35">
+    <span class="selection">Selecciona uno de nuestros metodos</span>
+    <br>
+    <span class="acepta">Amazon acepta la mayoría de tarjetas de crédito o débito y plataformas de pago</span>
+</div>
+<div class="column is-5">
+        <form style="display: inline" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_s-xclick">
+            <input type="hidden" name="hosted_button_id" value="28K5QTGWSHDUC">
+            <input type="image" src="https://omaharentalads.com/images/donate-transparent-small-2.png" width="110" height="45" border="0" name="submit" alt="PayPal, la forma rápida y segura de pagar en Internet.">
+            <img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
+            </form>
+<a class="button tar"><img src="images/pagos/card.png">&nbsp;<b style="color: black">pagar con tarjeta</b style="color: black"></a>
+</div>
+</div>
+<br>
+<hr>
+
+<div class="column formulario">
+        <form id="card-form" action="">
+<table class="table x">
+    <tr> <td><b>Nombre <b class="w">de titular en la tarjeta</b></b></td> <td><b class="num">Número de tarjeta</b></td> <td><b>Fecha de vencimiento</b></td> <td></td></tr>
+    <tr> <td><input type="text" class="name"></td> <td><div id="card-element" class="y"></div></td> 
+        <td>
+            <select class="fecha">
+                <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+                <option>6</option><option>7</option><option>8</option><option>9</option><option>10</option>
+                <option>11</option><option>12</option><option>13</option><option>14</option><option>15</option>
+                <option>16</option><option>17</option><option>18</option><option>19</option><option>20</option>
+                <option>21</option><option>22</option><option>23</option><option>24</option><option>25</option>
+                <option>26</option><option>27</option><option>28</option><option>29</option><option>30</option>
+                <option>31</option>
+            </select>&nbsp;
+            <select class="fecha">
+                    <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+                    <option>6</option><option>7</option><option>8</option><option>9</option><option>10</option>
+                    <option>11</option><option>12</option>
+            </select>
+        </td> 
+    <td>
+            <button type="submit" class="z">
+                    Pagar ahora
+                </button>    
+    </td></tr>
+    </table>
+    <button type="submit" class="z zz">
+        Pagar ahora
+    </button> 
+    </form>
+    </div>
+
+
+<br>
+<hr>
+       <center><a href="">Condiciones de uso</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="">Aviso de privacidad</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="">Ayuda</a><br>
+        <span>@ 1996-2019, Amazon.com, Inc, o sus filiales</span></center>
+<br><br>
+
+<script src="https://js.stripe.com/v3/"></script>
+<script src="javascript/card.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<script src="javascript/script.js"></script>
+
+</body>
+</html>
